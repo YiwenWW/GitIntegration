@@ -1,0 +1,1948 @@
+{
+    "totalCount": 29,
+    "data": [
+        {
+            "uid": "385af65b-b18e-367d-9f3a-32ea7cd7dc2c",
+            "name": "AccessTokenInputs",
+            "description": "Inputs for the Get SAP S/4HANA Cloud API Access Token activity.",
+            "type": "datatype",
+            "createdBy": "user@mail.com",
+            "updatedBy": "user@mail.com",
+            "createdDate": "2025-10-02T14:13:32.241892Z",
+            "updatedDate": "2025-10-02T14:13:32.241892Z",
+            "visible": false,
+            "activated": true,
+            "header": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "AccessTokenInputs",
+                "type": "object",
+                "required": [
+                    "accessTokenOptions",
+                    "url",
+                    "method",
+                    "useWinCa"
+                ],
+                "properties": {
+                    "accessTokenOptions": {
+                        "description": "Contains all information specific to the access token authentication flow.",
+                        "type": "object",
+                        "properties": {
+                            "url": {
+                                "description": "The URL pointing to the SAP S/4HANA Cloud UI.",
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": false,
+                        "required": [
+                            "url"
+                        ]
+                    },
+                    "url": {
+                        "description": "The target URL to use when providing the access token for authentication in a session. It must point to an active SAP S/4HANA Cloud API.",
+                        "type": "string"
+                    },
+                    "method": {
+                        "description": "The method to use when providing the access token for authentication in a session. We recommend that you use HEAD.",
+                        "type": "string",
+                        "default": "HEAD"
+                    },
+                    "useWinCa": {
+                        "description": "Determines whether WIN CA certificates are sent with HTTPS requests.",
+                        "type": "boolean"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "buildHeader": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "AccessTokenInputs",
+                "type": "object",
+                "required": [
+                    "accessTokenOptions",
+                    "url",
+                    "method",
+                    "useWinCa"
+                ],
+                "properties": {
+                    "accessTokenOptions": {
+                        "description": "Contains all information specific to the access token authentication flow.",
+                        "type": "object",
+                        "properties": {
+                            "url": {
+                                "description": "The URL pointing to the SAP S/4HANA Cloud UI.",
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": false,
+                        "required": [
+                            "url"
+                        ]
+                    },
+                    "url": {
+                        "description": "The target URL to use when providing the access token for authentication in a session. It must point to an active SAP S/4HANA Cloud API.",
+                        "type": "string"
+                    },
+                    "method": {
+                        "description": "The method to use when providing the access token for authentication in a session. We recommend that you use HEAD.",
+                        "type": "string",
+                        "default": "HEAD"
+                    },
+                    "useWinCa": {
+                        "description": "Determines whether WIN CA certificates are sent with HTTPS requests.",
+                        "type": "boolean"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "valid": true,
+            "identifier": "AccessTokenInputs",
+            "packageUid": "2dbcfd22-58ea-49a2-99d6-005f5bb902c3",
+            "packageVersionUid": "88e8235a-d2ec-41aa-a038-5240e0b83b8e",
+            "packageIdentifier": "irpa_core",
+            "access": "default",
+            "submittable": true,
+            "duplicable": false,
+            "mode": "managed"
+        },
+        {
+            "uid": "93aeb311-dff6-36b5-9c38-dd827d317d1a",
+            "name": "AccessTokenOutput",
+            "description": "Output of the Get SAP S/4HANA Cloud API Access Token activity. Can contain a CSRF token.",
+            "type": "datatype",
+            "createdBy": "user@mail.com",
+            "updatedBy": "user@mail.com",
+            "createdDate": "2025-10-02T14:13:32.243039Z",
+            "updatedDate": "2025-10-02T14:13:32.243039Z",
+            "visible": false,
+            "activated": true,
+            "header": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "AccessTokenOutput",
+                "type": "object",
+                "properties": {
+                    "csrfToken": {
+                        "description": "To be added to PUT, POST and DELETE calls to SAP S/4HANA Cloud.",
+                        "type": "string"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "buildHeader": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "AccessTokenOutput",
+                "type": "object",
+                "properties": {
+                    "csrfToken": {
+                        "description": "To be added to PUT, POST and DELETE calls to SAP S/4HANA Cloud.",
+                        "type": "string"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "valid": true,
+            "identifier": "AccessTokenOutput",
+            "packageUid": "2dbcfd22-58ea-49a2-99d6-005f5bb902c3",
+            "packageVersionUid": "88e8235a-d2ec-41aa-a038-5240e0b83b8e",
+            "packageIdentifier": "irpa_core",
+            "access": "default",
+            "submittable": true,
+            "duplicable": false,
+            "mode": "managed"
+        },
+        {
+            "uid": "1d8ad265-7a9c-31bd-a567-3bdefab37e8b",
+            "name": "Add Job Result",
+            "description": "Result object of addJob activity",
+            "type": "datatype",
+            "createdBy": "user@mail.com",
+            "updatedBy": "user@mail.com",
+            "createdDate": "2025-10-02T14:13:32.243699Z",
+            "updatedDate": "2025-10-02T14:13:32.243699Z",
+            "visible": false,
+            "activated": true,
+            "header": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "Add Job Result",
+                "type": "object",
+                "properties": {
+                    "uid": {
+                        "description": "job uid",
+                        "type": "string"
+                    },
+                    "code": {
+                        "description": "error code (if any)",
+                        "type": "string",
+                        "enum": [
+                            "automation",
+                            "process"
+                        ],
+                        "$enumRef": {
+                            "enum": "jobType",
+                            "module": "$.f2fee1f4-25ef-3451-a66b-11b328ea34f4"
+                        }
+                    },
+                    "label": {
+                        "description": "error label (if error)",
+                        "type": "string"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "buildHeader": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "Add Job Result",
+                "type": "object",
+                "properties": {
+                    "uid": {
+                        "description": "job uid",
+                        "type": "string"
+                    },
+                    "code": {
+                        "description": "error code (if any)",
+                        "type": "string",
+                        "enum": [
+                            "automation",
+                            "process"
+                        ],
+                        "$enumRef": {
+                            "enum": "jobType",
+                            "module": "$.f2fee1f4-25ef-3451-a66b-11b328ea34f4"
+                        }
+                    },
+                    "label": {
+                        "description": "error label (if error)",
+                        "type": "string"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "valid": true,
+            "identifier": "addJobResult",
+            "packageUid": "2dbcfd22-58ea-49a2-99d6-005f5bb902c3",
+            "packageVersionUid": "88e8235a-d2ec-41aa-a038-5240e0b83b8e",
+            "packageIdentifier": "irpa_core",
+            "access": "default",
+            "submittable": true,
+            "duplicable": false,
+            "mode": "managed"
+        },
+        {
+            "uid": "c99cbe91-657f-3ff5-b2cb-950444d238d9",
+            "name": "Add-In description.",
+            "description": "Description of an Excel Add-In.",
+            "type": "datatype",
+            "createdBy": "user@mail.com",
+            "updatedBy": "user@mail.com",
+            "createdDate": "2025-10-02T14:13:56.492520Z",
+            "updatedDate": "2025-10-02T14:13:56.492520Z",
+            "visible": false,
+            "activated": true,
+            "header": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "Add-In description.",
+                "type": "object",
+                "required": [
+                    "name",
+                    "title",
+                    "isOpen",
+                    "installed"
+                ],
+                "properties": {
+                    "name": {
+                        "description": "Name of the Add-In.",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "Title of the Add-In.",
+                        "type": "string"
+                    },
+                    "isOpen": {
+                        "description": "Is the Add-In opened.",
+                        "type": "boolean"
+                    },
+                    "installed": {
+                        "description": "Is the Add-In installed.",
+                        "type": "boolean"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "buildHeader": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "Add-In description.",
+                "type": "object",
+                "required": [
+                    "name",
+                    "title",
+                    "isOpen",
+                    "installed"
+                ],
+                "properties": {
+                    "name": {
+                        "description": "Name of the Add-In.",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "Title of the Add-In.",
+                        "type": "string"
+                    },
+                    "isOpen": {
+                        "description": "Is the Add-In opened.",
+                        "type": "boolean"
+                    },
+                    "installed": {
+                        "description": "Is the Add-In installed.",
+                        "type": "boolean"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "valid": true,
+            "identifier": "addInDescription",
+            "packageUid": "105f6259-cdaf-414b-86ea-5bc670448046",
+            "packageVersionUid": "b095fe58-ade3-4d67-be87-ca8001c83154",
+            "packageIdentifier": "irpa_excel",
+            "access": "default",
+            "submittable": true,
+            "duplicable": false,
+            "mode": "managed"
+        },
+        {
+            "uid": "19fe2329-982e-3ef2-8e90-cbbb1151f200",
+            "name": "Allow on protected Worksheet Datatype.",
+            "type": "datatype",
+            "createdBy": "user@mail.com",
+            "updatedBy": "user@mail.com",
+            "createdDate": "2025-10-02T14:13:56.493303Z",
+            "updatedDate": "2025-10-02T14:13:56.493303Z",
+            "visible": false,
+            "activated": true,
+            "header": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "Allow on protected Worksheet Datatype.",
+                "type": "object",
+                "required": [
+                    "allowFormattingCells",
+                    "allowFormattingColumns",
+                    "allowFormattingRows",
+                    "allowInsertingColumns",
+                    "allowInsertingRows"
+                ],
+                "properties": {
+                    "allowFormattingCells": {
+                        "description": "True allows the user to format any cell on a protected worksheet.",
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "allowFormattingColumns": {
+                        "description": "True allows the user to format any column on a protected worksheet.",
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "allowFormattingRows": {
+                        "description": "True allows the user to format any row on a protected worksheet.",
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "allowInsertingColumns": {
+                        "description": "True allows the user to insert columns on the protected worksheet.",
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "allowInsertingRows": {
+                        "description": "True allows the user to insert rows on the protected worksheet.",
+                        "type": "boolean",
+                        "default": false
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "buildHeader": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "Allow on protected Worksheet Datatype.",
+                "type": "object",
+                "required": [
+                    "allowFormattingCells",
+                    "allowFormattingColumns",
+                    "allowFormattingRows",
+                    "allowInsertingColumns",
+                    "allowInsertingRows"
+                ],
+                "properties": {
+                    "allowFormattingCells": {
+                        "description": "True allows the user to format any cell on a protected worksheet.",
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "allowFormattingColumns": {
+                        "description": "True allows the user to format any column on a protected worksheet.",
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "allowFormattingRows": {
+                        "description": "True allows the user to format any row on a protected worksheet.",
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "allowInsertingColumns": {
+                        "description": "True allows the user to insert columns on the protected worksheet.",
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "allowInsertingRows": {
+                        "description": "True allows the user to insert rows on the protected worksheet.",
+                        "type": "boolean",
+                        "default": false
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "valid": true,
+            "identifier": "allowOnProtectedWorksheetDatatype",
+            "packageUid": "105f6259-cdaf-414b-86ea-5bc670448046",
+            "packageVersionUid": "b095fe58-ade3-4d67-be87-ca8001c83154",
+            "packageIdentifier": "irpa_excel",
+            "access": "default",
+            "submittable": true,
+            "duplicable": false,
+            "mode": "managed"
+        },
+        {
+            "uid": "101e9a46-e076-33b4-b634-27db8d0b0963",
+            "name": "Cell",
+            "description": "Two coordonnates corresponding to the position of a cell.",
+            "type": "datatype",
+            "createdBy": "user@mail.com",
+            "updatedBy": "user@mail.com",
+            "createdDate": "2025-10-02T14:13:56.494658Z",
+            "updatedDate": "2025-10-02T14:13:56.494658Z",
+            "visible": false,
+            "activated": true,
+            "header": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "Cell",
+                "type": "object",
+                "required": [
+                    "row",
+                    "column",
+                    "columnName",
+                    "address"
+                ],
+                "properties": {
+                    "row": {
+                        "description": "Row of the cell (1-based).",
+                        "type": "number"
+                    },
+                    "column": {
+                        "description": "Column of the cell (1-based).",
+                        "type": "number"
+                    },
+                    "columnName": {
+                        "description": "Column name of the cell.",
+                        "type": "string"
+                    },
+                    "address": {
+                        "description": "Address of the cell.",
+                        "type": "string"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "buildHeader": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "Cell",
+                "type": "object",
+                "required": [
+                    "row",
+                    "column",
+                    "columnName",
+                    "address"
+                ],
+                "properties": {
+                    "row": {
+                        "description": "Row of the cell (1-based).",
+                        "type": "number"
+                    },
+                    "column": {
+                        "description": "Column of the cell (1-based).",
+                        "type": "number"
+                    },
+                    "columnName": {
+                        "description": "Column name of the cell.",
+                        "type": "string"
+                    },
+                    "address": {
+                        "description": "Address of the cell.",
+                        "type": "string"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "valid": true,
+            "identifier": "cell",
+            "packageUid": "105f6259-cdaf-414b-86ea-5bc670448046",
+            "packageVersionUid": "b095fe58-ade3-4d67-be87-ca8001c83154",
+            "packageIdentifier": "irpa_excel",
+            "access": "default",
+            "submittable": true,
+            "duplicable": false,
+            "mode": "managed"
+        },
+        {
+            "uid": "d5d1bcc8-d6ae-3014-ae2b-a97049e55a4b",
+            "name": "certificateContainer",
+            "description": "Certificate container",
+            "type": "datatype",
+            "createdBy": "user@mail.com",
+            "updatedBy": "user@mail.com",
+            "createdDate": "2025-10-02T14:13:32.244350Z",
+            "updatedDate": "2025-10-02T14:13:32.244351Z",
+            "visible": false,
+            "activated": true,
+            "header": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "certificateContainer",
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "unique name to identify key.",
+                        "type": "string"
+                    },
+                    "usage": {
+                        "description": "(signature / encryption) (default is 'encryption')",
+                        "type": "string",
+                        "enum": [
+                            "signature",
+                            "encryption"
+                        ],
+                        "$enumRef": {
+                            "enum": "cryptography.usage",
+                            "module": "$.f2fee1f4-25ef-3451-a66b-11b328ea34f4"
+                        }
+                    },
+                    "location": {
+                        "description": "(currentUser/localMachine/…) (default is 'currentUser')",
+                        "type": "string",
+                        "enum": [
+                            "currentUser",
+                            "localMachine",
+                            "currentService",
+                            "services",
+                            "users",
+                            "currentUserGroupPolicy",
+                            "localMachineGroupPolicy",
+                            "localMachineEnterprise"
+                        ],
+                        "$enumRef": {
+                            "enum": "cryptography.storeLocation",
+                            "module": "$.f2fee1f4-25ef-3451-a66b-11b328ea34f4"
+                        }
+                    },
+                    "store": {
+                        "description": "store name (eg. : 'My' (=Personal), …)",
+                        "type": "string"
+                    },
+                    "alias": {
+                        "description": "X509 alias (eg. : 'CN=CtxtClientExchange2')",
+                        "type": "string"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "buildHeader": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "certificateContainer",
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "unique name to identify key.",
+                        "type": "string"
+                    },
+                    "usage": {
+                        "description": "(signature / encryption) (default is 'encryption')",
+                        "type": "string",
+                        "enum": [
+                            "signature",
+                            "encryption"
+                        ],
+                        "$enumRef": {
+                            "enum": "cryptography.usage",
+                            "module": "$.f2fee1f4-25ef-3451-a66b-11b328ea34f4"
+                        }
+                    },
+                    "location": {
+                        "description": "(currentUser/localMachine/…) (default is 'currentUser')",
+                        "type": "string",
+                        "enum": [
+                            "currentUser",
+                            "localMachine",
+                            "currentService",
+                            "services",
+                            "users",
+                            "currentUserGroupPolicy",
+                            "localMachineGroupPolicy",
+                            "localMachineEnterprise"
+                        ],
+                        "$enumRef": {
+                            "enum": "cryptography.storeLocation",
+                            "module": "$.f2fee1f4-25ef-3451-a66b-11b328ea34f4"
+                        }
+                    },
+                    "store": {
+                        "description": "store name (eg. : 'My' (=Personal), …)",
+                        "type": "string"
+                    },
+                    "alias": {
+                        "description": "X509 alias (eg. : 'CN=CtxtClientExchange2')",
+                        "type": "string"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "valid": true,
+            "identifier": "certificateContainer",
+            "packageUid": "2dbcfd22-58ea-49a2-99d6-005f5bb902c3",
+            "packageVersionUid": "88e8235a-d2ec-41aa-a038-5240e0b83b8e",
+            "packageIdentifier": "irpa_core",
+            "access": "default",
+            "submittable": true,
+            "duplicable": false,
+            "mode": "managed"
+        },
+        {
+            "uid": "e6bbdf6f-4068-380d-b966-52a37df443c1",
+            "name": "COM Add-In description.",
+            "description": "Description of a COM Add-In.",
+            "type": "datatype",
+            "createdBy": "user@mail.com",
+            "updatedBy": "user@mail.com",
+            "createdDate": "2025-10-02T14:13:56.495201Z",
+            "updatedDate": "2025-10-02T14:13:56.495201Z",
+            "visible": false,
+            "activated": true,
+            "header": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "COM Add-In description.",
+                "type": "object",
+                "required": [
+                    "progId",
+                    "description",
+                    "connect"
+                ],
+                "properties": {
+                    "progId": {
+                        "description": "ProgId of the COM Add-In.",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "Description of the COM Add-In.",
+                        "type": "string"
+                    },
+                    "connect": {
+                        "description": "Is the COM Add-In connected.",
+                        "type": "boolean"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "buildHeader": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "COM Add-In description.",
+                "type": "object",
+                "required": [
+                    "progId",
+                    "description",
+                    "connect"
+                ],
+                "properties": {
+                    "progId": {
+                        "description": "ProgId of the COM Add-In.",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "Description of the COM Add-In.",
+                        "type": "string"
+                    },
+                    "connect": {
+                        "description": "Is the COM Add-In connected.",
+                        "type": "boolean"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "valid": true,
+            "identifier": "COMAddInDescription",
+            "packageUid": "105f6259-cdaf-414b-86ea-5bc670448046",
+            "packageVersionUid": "b095fe58-ade3-4d67-be87-ca8001c83154",
+            "packageIdentifier": "irpa_excel",
+            "access": "default",
+            "submittable": true,
+            "duplicable": false,
+            "mode": "managed"
+        },
+        {
+            "uid": "0716dcfe-85c9-3a0c-983b-dadef7dc619b",
+            "name": "credential",
+            "description": "Credential object",
+            "type": "datatype",
+            "createdBy": "user@mail.com",
+            "updatedBy": "user@mail.com",
+            "createdDate": "2025-10-02T14:13:32.244991Z",
+            "updatedDate": "2025-10-02T14:13:32.244991Z",
+            "visible": false,
+            "activated": true,
+            "header": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "credential",
+                "type": "object",
+                "properties": {
+                    "login": {
+                        "description": "user login",
+                        "type": "string"
+                    },
+                    "password": {
+                        "description": "password",
+                        "$ref": "#/definitions/password"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false,
+                "definitions": {
+                    "password": {
+                        "type": "string",
+                        "password": true
+                    }
+                }
+            },
+            "buildHeader": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "credential",
+                "type": "object",
+                "properties": {
+                    "login": {
+                        "description": "user login",
+                        "type": "string"
+                    },
+                    "password": {
+                        "description": "password",
+                        "$ref": "#/definitions/password"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false,
+                "definitions": {
+                    "password": {
+                        "type": "string",
+                        "password": true
+                    }
+                }
+            },
+            "valid": true,
+            "identifier": "credential",
+            "packageUid": "2dbcfd22-58ea-49a2-99d6-005f5bb902c3",
+            "packageVersionUid": "88e8235a-d2ec-41aa-a038-5240e0b83b8e",
+            "packageIdentifier": "irpa_core",
+            "access": "default",
+            "submittable": true,
+            "duplicable": false,
+            "mode": "managed"
+        },
+        {
+            "uid": "6fe1bcd3-15a2-3a89-bb25-f1dfd8c1c515",
+            "name": "Data Object Validation",
+            "description": "Result of the validation of a data Object. If one property of the object has a wrong type, the isValid parameter is expected to be false and the error message can be retreived.",
+            "type": "datatype",
+            "createdBy": "user@mail.com",
+            "updatedBy": "user@mail.com",
+            "createdDate": "2025-10-02T14:13:32.245654Z",
+            "updatedDate": "2025-10-02T14:13:32.245654Z",
+            "visible": false,
+            "activated": true,
+            "header": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "Data Object Validation",
+                "type": "object",
+                "required": [
+                    "isValid"
+                ],
+                "properties": {
+                    "isValid": {
+                        "description": "The value is true if the validation is passed, false otherwise",
+                        "type": "boolean"
+                    },
+                    "errorMessage": {
+                        "description": "Error message returned by the data object validator. It is undefined if there is no error.",
+                        "type": "string"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "buildHeader": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "Data Object Validation",
+                "type": "object",
+                "required": [
+                    "isValid"
+                ],
+                "properties": {
+                    "isValid": {
+                        "description": "The value is true if the validation is passed, false otherwise",
+                        "type": "boolean"
+                    },
+                    "errorMessage": {
+                        "description": "Error message returned by the data object validator. It is undefined if there is no error.",
+                        "type": "string"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "valid": true,
+            "identifier": "dataObjectValidation",
+            "packageUid": "2dbcfd22-58ea-49a2-99d6-005f5bb902c3",
+            "packageVersionUid": "88e8235a-d2ec-41aa-a038-5240e0b83b8e",
+            "packageIdentifier": "irpa_core",
+            "access": "default",
+            "submittable": true,
+            "duplicable": false,
+            "mode": "managed"
+        },
+        {
+            "uid": "ce4c2c6e-6475-38ee-8ca6-6f508d35d1a7",
+            "name": "DNS information",
+            "description": "DNS information",
+            "type": "datatype",
+            "createdBy": "user@mail.com",
+            "updatedBy": "user@mail.com",
+            "createdDate": "2025-10-02T14:13:32.246256Z",
+            "updatedDate": "2025-10-02T14:13:32.246256Z",
+            "visible": false,
+            "activated": true,
+            "header": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "DNS information",
+                "type": "object",
+                "required": [
+                    "address",
+                    "family",
+                    "servers",
+                    "addresses"
+                ],
+                "properties": {
+                    "address": {
+                        "description": "job uid",
+                        "type": "string"
+                    },
+                    "family": {
+                        "description": "IP type 4 or 6",
+                        "type": "number"
+                    },
+                    "servers": {
+                        "description": "servers IP adresses",
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "addresses": {
+                        "description": "IP adresses resolved by DNS"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "buildHeader": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "DNS information",
+                "type": "object",
+                "required": [
+                    "address",
+                    "family",
+                    "servers",
+                    "addresses"
+                ],
+                "properties": {
+                    "address": {
+                        "description": "job uid",
+                        "type": "string"
+                    },
+                    "family": {
+                        "description": "IP type 4 or 6",
+                        "type": "number"
+                    },
+                    "servers": {
+                        "description": "servers IP adresses",
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "addresses": {
+                        "description": "IP adresses resolved by DNS"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "valid": true,
+            "identifier": "dnsInfos",
+            "packageUid": "2dbcfd22-58ea-49a2-99d6-005f5bb902c3",
+            "packageVersionUid": "88e8235a-d2ec-41aa-a038-5240e0b83b8e",
+            "packageIdentifier": "irpa_core",
+            "access": "default",
+            "submittable": true,
+            "duplicable": false,
+            "mode": "managed"
+        },
+        {
+            "uid": "ad5d59b1-e927-3bd7-af58-e47a421a9be1",
+            "name": "File Statistics",
+            "description": "File Statistics",
+            "type": "datatype",
+            "createdBy": "user@mail.com",
+            "updatedBy": "user@mail.com",
+            "createdDate": "2025-10-02T14:13:32.247506Z",
+            "updatedDate": "2025-10-02T14:13:32.247507Z",
+            "visible": false,
+            "activated": true,
+            "header": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "File Statistics",
+                "type": "object",
+                "properties": {
+                    "dev": {
+                        "description": "The numeric identifier of the device containing the file.",
+                        "type": "number"
+                    },
+                    "ino": {
+                        "description": "The file system specific \"Inode\" number for the file.",
+                        "type": "number"
+                    },
+                    "mode": {
+                        "description": "A bit-field describing the file type and mode.",
+                        "type": "number"
+                    },
+                    "nlink": {
+                        "description": "The number of hard-links that exist for the file.",
+                        "type": "number"
+                    },
+                    "uid": {
+                        "description": "The numeric user identifier of the user that owns the file (POSIX).",
+                        "type": "number"
+                    },
+                    "gid": {
+                        "description": "The numeric group identifier of the group that owns the file (POSIX).",
+                        "type": "number"
+                    },
+                    "rdev": {
+                        "description": "A numeric device identifier if the file represents a device.",
+                        "type": "number"
+                    },
+                    "size": {
+                        "description": "The size of the file in bytes.",
+                        "type": "number"
+                    },
+                    "blksize": {
+                        "description": "The file system block size for i/o operations.",
+                        "type": "number"
+                    },
+                    "blocks": {
+                        "description": "The number of blocks allocated for this file.",
+                        "type": "number"
+                    },
+                    "atimeMs": {
+                        "description": "The timestamp indicating the last time this file was accessed expressed in milliseconds since the POSIX Epoch.",
+                        "type": "number"
+                    },
+                    "mtimeMs": {
+                        "description": "The timestamp indicating the last time this file was modified expressed in milliseconds since the POSIX Epoch.",
+                        "type": "number"
+                    },
+                    "ctimeMs": {
+                        "description": "The timestamp indicating the last time the file status was changed expressed in milliseconds since the POSIX Epoch.",
+                        "type": "number"
+                    },
+                    "birthtimeMs": {
+                        "description": "The timestamp indicating the creation time of this file expressed in milliseconds since the POSIX Epoch.",
+                        "type": "number"
+                    },
+                    "atime": {
+                        "description": "The timestamp indicating the last time this file was accessed.",
+                        "type": "string"
+                    },
+                    "mtime": {
+                        "description": "The timestamp indicating the last time this file was modified.",
+                        "type": "string"
+                    },
+                    "ctime": {
+                        "description": "The timestamp indicating the last time the file status was changed.",
+                        "type": "string"
+                    },
+                    "birthtime": {
+                        "description": "The timestamp indicating the creation time of this file.",
+                        "type": "string"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "buildHeader": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "File Statistics",
+                "type": "object",
+                "properties": {
+                    "dev": {
+                        "description": "The numeric identifier of the device containing the file.",
+                        "type": "number"
+                    },
+                    "ino": {
+                        "description": "The file system specific \"Inode\" number for the file.",
+                        "type": "number"
+                    },
+                    "mode": {
+                        "description": "A bit-field describing the file type and mode.",
+                        "type": "number"
+                    },
+                    "nlink": {
+                        "description": "The number of hard-links that exist for the file.",
+                        "type": "number"
+                    },
+                    "uid": {
+                        "description": "The numeric user identifier of the user that owns the file (POSIX).",
+                        "type": "number"
+                    },
+                    "gid": {
+                        "description": "The numeric group identifier of the group that owns the file (POSIX).",
+                        "type": "number"
+                    },
+                    "rdev": {
+                        "description": "A numeric device identifier if the file represents a device.",
+                        "type": "number"
+                    },
+                    "size": {
+                        "description": "The size of the file in bytes.",
+                        "type": "number"
+                    },
+                    "blksize": {
+                        "description": "The file system block size for i/o operations.",
+                        "type": "number"
+                    },
+                    "blocks": {
+                        "description": "The number of blocks allocated for this file.",
+                        "type": "number"
+                    },
+                    "atimeMs": {
+                        "description": "The timestamp indicating the last time this file was accessed expressed in milliseconds since the POSIX Epoch.",
+                        "type": "number"
+                    },
+                    "mtimeMs": {
+                        "description": "The timestamp indicating the last time this file was modified expressed in milliseconds since the POSIX Epoch.",
+                        "type": "number"
+                    },
+                    "ctimeMs": {
+                        "description": "The timestamp indicating the last time the file status was changed expressed in milliseconds since the POSIX Epoch.",
+                        "type": "number"
+                    },
+                    "birthtimeMs": {
+                        "description": "The timestamp indicating the creation time of this file expressed in milliseconds since the POSIX Epoch.",
+                        "type": "number"
+                    },
+                    "atime": {
+                        "description": "The timestamp indicating the last time this file was accessed.",
+                        "type": "string"
+                    },
+                    "mtime": {
+                        "description": "The timestamp indicating the last time this file was modified.",
+                        "type": "string"
+                    },
+                    "ctime": {
+                        "description": "The timestamp indicating the last time the file status was changed.",
+                        "type": "string"
+                    },
+                    "birthtime": {
+                        "description": "The timestamp indicating the creation time of this file.",
+                        "type": "string"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "valid": true,
+            "identifier": "fsStats",
+            "packageUid": "2dbcfd22-58ea-49a2-99d6-005f5bb902c3",
+            "packageVersionUid": "88e8235a-d2ec-41aa-a038-5240e0b83b8e",
+            "packageIdentifier": "irpa_core",
+            "access": "default",
+            "submittable": true,
+            "duplicable": false,
+            "mode": "managed"
+        },
+        {
+            "uid": "bd130395-1517-3c6f-b9a4-29c381c08421",
+            "name": "Ftp Content Info",
+            "description": "Ftp Content Info",
+            "type": "datatype",
+            "createdBy": "user@mail.com",
+            "updatedBy": "user@mail.com",
+            "createdDate": "2025-10-02T14:13:32.248252Z",
+            "updatedDate": "2025-10-02T14:13:32.248253Z",
+            "visible": false,
+            "activated": true,
+            "header": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "Ftp Content Info",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "Name of the file/folder (without extension).",
+                        "type": "string"
+                    },
+                    "extension": {
+                        "description": "Extension of the file/folder.",
+                        "type": "string"
+                    },
+                    "fullname": {
+                        "description": "Name of the file (with extension).",
+                        "type": "string"
+                    },
+                    "kind": {
+                        "description": "Whether it is a file or a folder.",
+                        "type": "string"
+                    },
+                    "size": {
+                        "description": "Size in bytes.",
+                        "type": "number"
+                    },
+                    "rights": {
+                        "description": "Whether the content can be read, write, delete...",
+                        "type": "string"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "buildHeader": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "Ftp Content Info",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "Name of the file/folder (without extension).",
+                        "type": "string"
+                    },
+                    "extension": {
+                        "description": "Extension of the file/folder.",
+                        "type": "string"
+                    },
+                    "fullname": {
+                        "description": "Name of the file (with extension).",
+                        "type": "string"
+                    },
+                    "kind": {
+                        "description": "Whether it is a file or a folder.",
+                        "type": "string"
+                    },
+                    "size": {
+                        "description": "Size in bytes.",
+                        "type": "number"
+                    },
+                    "rights": {
+                        "description": "Whether the content can be read, write, delete...",
+                        "type": "string"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "valid": true,
+            "identifier": "ftpContentInfo",
+            "packageUid": "2dbcfd22-58ea-49a2-99d6-005f5bb902c3",
+            "packageVersionUid": "88e8235a-d2ec-41aa-a038-5240e0b83b8e",
+            "packageIdentifier": "irpa_core",
+            "access": "default",
+            "submittable": true,
+            "duplicable": false,
+            "mode": "managed"
+        },
+        {
+            "uid": "30c2467e-de78-35c2-8f71-5cbe2896cc22",
+            "name": "Get Folder Content result",
+            "description": "Result object of Get Folder Content activity",
+            "type": "datatype",
+            "createdBy": "user@mail.com",
+            "updatedBy": "user@mail.com",
+            "createdDate": "2025-10-02T14:13:32.246848Z",
+            "updatedDate": "2025-10-02T14:13:32.246849Z",
+            "visible": false,
+            "activated": true,
+            "header": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "Get Folder Content result",
+                "type": "object",
+                "properties": {
+                    "objectId": {
+                        "description": "object id",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "item name",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "file or folder",
+                        "type": "string"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "buildHeader": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "Get Folder Content result",
+                "type": "object",
+                "properties": {
+                    "objectId": {
+                        "description": "object id",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "item name",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "file or folder",
+                        "type": "string"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "valid": true,
+            "identifier": "folderItem",
+            "packageUid": "2dbcfd22-58ea-49a2-99d6-005f5bb902c3",
+            "packageVersionUid": "88e8235a-d2ec-41aa-a038-5240e0b83b8e",
+            "packageIdentifier": "irpa_core",
+            "access": "default",
+            "submittable": true,
+            "duplicable": false,
+            "mode": "managed"
+        },
+        {
+            "uid": "e1a7a08e-04e0-3737-9315-88c9cf3d88d2",
+            "name": "Job Parameters",
+            "description": "Parameters used to create a job",
+            "type": "datatype",
+            "createdBy": "user@mail.com",
+            "updatedBy": "user@mail.com",
+            "createdDate": "2025-10-02T14:13:32.250027Z",
+            "updatedDate": "2025-10-02T14:13:32.250028Z",
+            "visible": false,
+            "activated": true,
+            "header": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "Job Parameters",
+                "type": "object",
+                "properties": {
+                    "automationUid": {
+                        "description": "automation uid (optional if name is provided)",
+                        "type": "string"
+                    },
+                    "automation": {
+                        "description": "automation name (optional if uid is provided)"
+                    },
+                    "type": {
+                        "description": "type of execution: automation, process, .. (optional automation by default)",
+                        "type": "string",
+                        "enum": [
+                            "automation",
+                            "process"
+                        ],
+                        "$enumRef": {
+                            "enum": "jobType",
+                            "module": "$.f2fee1f4-25ef-3451-a66b-11b328ea34f4"
+                        }
+                    },
+                    "packageAlias": {
+                        "description": "automation package alias (optional if uid is provided or prefixed in automation name or current package)"
+                    },
+                    "data": {
+                        "description": "automation input data as named parameters"
+                    },
+                    "notify": {
+                        "type": "boolean"
+                    },
+                    "priority": {
+                        "type": "number"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "buildHeader": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "Job Parameters",
+                "type": "object",
+                "properties": {
+                    "automationUid": {
+                        "description": "automation uid (optional if name is provided)",
+                        "type": "string"
+                    },
+                    "automation": {
+                        "description": "automation name (optional if uid is provided)"
+                    },
+                    "type": {
+                        "description": "type of execution: automation, process, .. (optional automation by default)",
+                        "type": "string",
+                        "enum": [
+                            "automation",
+                            "process"
+                        ],
+                        "$enumRef": {
+                            "enum": "jobType",
+                            "module": "$.f2fee1f4-25ef-3451-a66b-11b328ea34f4"
+                        }
+                    },
+                    "packageAlias": {
+                        "description": "automation package alias (optional if uid is provided or prefixed in automation name or current package)"
+                    },
+                    "data": {
+                        "description": "automation input data as named parameters"
+                    },
+                    "notify": {
+                        "type": "boolean"
+                    },
+                    "priority": {
+                        "type": "number"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "valid": true,
+            "identifier": "jobParameters",
+            "packageUid": "2dbcfd22-58ea-49a2-99d6-005f5bb902c3",
+            "packageVersionUid": "88e8235a-d2ec-41aa-a038-5240e0b83b8e",
+            "packageIdentifier": "irpa_core",
+            "access": "default",
+            "submittable": true,
+            "duplicable": false,
+            "mode": "managed"
+        },
+        {
+            "uid": "1f71aa7b-0a74-3fa3-a361-88a4a2825577",
+            "name": "Job Properties",
+            "type": "datatype",
+            "createdBy": "user@mail.com",
+            "updatedBy": "user@mail.com",
+            "createdDate": "2025-10-02T14:13:32.250591Z",
+            "updatedDate": "2025-10-02T14:13:32.250591Z",
+            "visible": false,
+            "activated": true,
+            "header": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "Job Properties",
+                "type": "object",
+                "required": [
+                    "uid",
+                    "startTimestamp",
+                    "automationName",
+                    "automationUid",
+                    "packageUid",
+                    "packageVersionUid",
+                    "priority",
+                    "main",
+                    "attended",
+                    "designMode"
+                ],
+                "properties": {
+                    "uid": {
+                        "description": "job uid",
+                        "type": "string"
+                    },
+                    "startTimestamp": {
+                        "description": "job start timestamp",
+                        "type": "string"
+                    },
+                    "automationName": {
+                        "description": "automation name (optional if uid is provided)",
+                        "type": "string"
+                    },
+                    "automationUid": {
+                        "description": "automation uid (optional if name is provided)",
+                        "type": "string"
+                    },
+                    "packageUid": {
+                        "description": "automtion package uid",
+                        "type": "string"
+                    },
+                    "packageVersionUid": {
+                        "description": "automation package version uid",
+                        "type": "string"
+                    },
+                    "priority": {
+                        "description": "job priority",
+                        "type": "number"
+                    },
+                    "main": {
+                        "description": "true for main job",
+                        "type": "boolean"
+                    },
+                    "attended": {
+                        "description": "true if attended",
+                        "type": "boolean"
+                    },
+                    "designMode": {
+                        "description": "true in design mode",
+                        "type": "boolean"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "buildHeader": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "Job Properties",
+                "type": "object",
+                "required": [
+                    "uid",
+                    "startTimestamp",
+                    "automationName",
+                    "automationUid",
+                    "packageUid",
+                    "packageVersionUid",
+                    "priority",
+                    "main",
+                    "attended",
+                    "designMode"
+                ],
+                "properties": {
+                    "uid": {
+                        "description": "job uid",
+                        "type": "string"
+                    },
+                    "startTimestamp": {
+                        "description": "job start timestamp",
+                        "type": "string"
+                    },
+                    "automationName": {
+                        "description": "automation name (optional if uid is provided)",
+                        "type": "string"
+                    },
+                    "automationUid": {
+                        "description": "automation uid (optional if name is provided)",
+                        "type": "string"
+                    },
+                    "packageUid": {
+                        "description": "automtion package uid",
+                        "type": "string"
+                    },
+                    "packageVersionUid": {
+                        "description": "automation package version uid",
+                        "type": "string"
+                    },
+                    "priority": {
+                        "description": "job priority",
+                        "type": "number"
+                    },
+                    "main": {
+                        "description": "true for main job",
+                        "type": "boolean"
+                    },
+                    "attended": {
+                        "description": "true if attended",
+                        "type": "boolean"
+                    },
+                    "designMode": {
+                        "description": "true in design mode",
+                        "type": "boolean"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "valid": true,
+            "identifier": "jobProperties",
+            "packageUid": "2dbcfd22-58ea-49a2-99d6-005f5bb902c3",
+            "packageVersionUid": "88e8235a-d2ec-41aa-a038-5240e0b83b8e",
+            "packageIdentifier": "irpa_core",
+            "access": "default",
+            "submittable": true,
+            "duplicable": false,
+            "mode": "managed"
+        },
+        {
+            "uid": "7137070d-2861-34ef-901f-ba7eb7b67a39",
+            "name": "keyContainer",
+            "description": "Key container",
+            "type": "datatype",
+            "createdBy": "user@mail.com",
+            "updatedBy": "user@mail.com",
+            "createdDate": "2025-10-02T14:13:32.251175Z",
+            "updatedDate": "2025-10-02T14:13:32.251175Z",
+            "visible": false,
+            "activated": true,
+            "header": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "keyContainer",
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "unique name to identify key.",
+                        "type": "string"
+                    },
+                    "usage": {
+                        "description": "(signature / encryption) (default is 'encryption')",
+                        "type": "string",
+                        "enum": [
+                            "signature",
+                            "encryption"
+                        ],
+                        "$enumRef": {
+                            "enum": "cryptography.usage",
+                            "module": "$.f2fee1f4-25ef-3451-a66b-11b328ea34f4"
+                        }
+                    },
+                    "location": {
+                        "description": "(currentUser/localMachine/…) (default is 'currentUser')",
+                        "type": "string",
+                        "enum": [
+                            "currentUser",
+                            "localMachine"
+                        ],
+                        "$enumRef": {
+                            "enum": "cryptography.keyLocation",
+                            "module": "$.f2fee1f4-25ef-3451-a66b-11b328ea34f4"
+                        }
+                    },
+                    "publicKey": {
+                        "description": "public Key (optional)",
+                        "type": "string"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "buildHeader": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "keyContainer",
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "unique name to identify key.",
+                        "type": "string"
+                    },
+                    "usage": {
+                        "description": "(signature / encryption) (default is 'encryption')",
+                        "type": "string",
+                        "enum": [
+                            "signature",
+                            "encryption"
+                        ],
+                        "$enumRef": {
+                            "enum": "cryptography.usage",
+                            "module": "$.f2fee1f4-25ef-3451-a66b-11b328ea34f4"
+                        }
+                    },
+                    "location": {
+                        "description": "(currentUser/localMachine/…) (default is 'currentUser')",
+                        "type": "string",
+                        "enum": [
+                            "currentUser",
+                            "localMachine"
+                        ],
+                        "$enumRef": {
+                            "enum": "cryptography.keyLocation",
+                            "module": "$.f2fee1f4-25ef-3451-a66b-11b328ea34f4"
+                        }
+                    },
+                    "publicKey": {
+                        "description": "public Key (optional)",
+                        "type": "string"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "valid": true,
+            "identifier": "keyContainer",
+            "packageUid": "2dbcfd22-58ea-49a2-99d6-005f5bb902c3",
+            "packageVersionUid": "88e8235a-d2ec-41aa-a038-5240e0b83b8e",
+            "packageIdentifier": "irpa_core",
+            "access": "default",
+            "submittable": true,
+            "duplicable": false,
+            "mode": "managed"
+        },
+        {
+            "uid": "b7640ce5-de70-3175-bba8-b8a6d76f4d73",
+            "name": "Open Options Datatype",
+            "description": "Options to provide opening informations and avoid some popups.",
+            "type": "datatype",
+            "createdBy": "user@mail.com",
+            "updatedBy": "user@mail.com",
+            "createdDate": "2025-10-02T14:13:56.496817Z",
+            "updatedDate": "2025-10-02T14:13:56.496817Z",
+            "visible": false,
+            "activated": true,
+            "header": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "Open Options Datatype",
+                "type": "object",
+                "properties": {
+                    "openPassword": {
+                        "description": "Optional. Password required to open a protected workbook. If this argument is not set and the workbook requires a password, the user is prompted for the password.",
+                        "$ref": "#/definitions/password"
+                    },
+                    "writePassword": {
+                        "description": "Optional. Password required to write to a write-protected workbook. If this argument is not set and the workbook requires a password, the user is prompted for the password.",
+                        "$ref": "#/definitions/password"
+                    },
+                    "updateLinks": {
+                        "description": "Specifies how the file's external references (links) should be updated when the workbook is opened.",
+                        "type": "string",
+                        "enum": [
+                            "updateLinks",
+                            "dontUpdateLinks",
+                            "interactivePopup"
+                        ],
+                        "$enumRef": {
+                            "enum": "updateLinkChoices",
+                            "module": "$.079265fd-0cc3-37ff-9896-ef34682a481b"
+                        },
+                        "default": "updateLinks"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false,
+                "definitions": {
+                    "password": {
+                        "type": "string",
+                        "password": true
+                    }
+                }
+            },
+            "buildHeader": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "Open Options Datatype",
+                "type": "object",
+                "properties": {
+                    "openPassword": {
+                        "description": "Optional. Password required to open a protected workbook. If this argument is not set and the workbook requires a password, the user is prompted for the password.",
+                        "$ref": "#/definitions/password"
+                    },
+                    "writePassword": {
+                        "description": "Optional. Password required to write to a write-protected workbook. If this argument is not set and the workbook requires a password, the user is prompted for the password.",
+                        "$ref": "#/definitions/password"
+                    },
+                    "updateLinks": {
+                        "description": "Specifies how the file's external references (links) should be updated when the workbook is opened.",
+                        "type": "string",
+                        "enum": [
+                            "updateLinks",
+                            "dontUpdateLinks",
+                            "interactivePopup"
+                        ],
+                        "$enumRef": {
+                            "enum": "updateLinkChoices",
+                            "module": "$.079265fd-0cc3-37ff-9896-ef34682a481b"
+                        },
+                        "default": "updateLinks"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false,
+                "definitions": {
+                    "password": {
+                        "type": "string",
+                        "password": true
+                    }
+                }
+            },
+            "valid": true,
+            "identifier": "openOptionsDataType",
+            "packageUid": "105f6259-cdaf-414b-86ea-5bc670448046",
+            "packageVersionUid": "b095fe58-ade3-4d67-be87-ca8001c83154",
+            "packageIdentifier": "irpa_excel",
+            "access": "default",
+            "submittable": true,
+            "duplicable": false,
+            "mode": "managed"
+        },
+        {
+            "uid": "56ec37da-b2d0-3fbd-b99c-64cdde18084d",
+            "name": "Progress Dialog Parameters",
+            "description": "Progress Dialog Parameters",
+            "type": "datatype",
+            "createdBy": "user@mail.com",
+            "updatedBy": "user@mail.com",
+            "createdDate": "2025-10-02T14:13:32.252771Z",
+            "updatedDate": "2025-10-02T14:13:32.252771Z",
+            "visible": false,
+            "activated": true,
+            "header": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "Progress Dialog Parameters",
+                "type": "object",
+                "required": [
+                    "message"
+                ],
+                "properties": {
+                    "message": {
+                        "description": "Text displayed in the dialog",
+                        "type": "string"
+                    },
+                    "progressValue": {
+                        "description": "Value displayed in the progress indicator area (must be number for Value-based, string for Step-based)"
+                    },
+                    "progressDialogTemplate": {
+                        "description": "Progress Dialog Template. Default value: Hide",
+                        "type": "string",
+                        "enum": [
+                            "None",
+                            "Cancel",
+                            "Hide",
+                            "CancelHide"
+                        ],
+                        "$enumRef": {
+                            "enum": "progressDialog.progressDialogTemplate",
+                            "module": "$.f2fee1f4-25ef-3451-a66b-11b328ea34f4"
+                        }
+                    },
+                    "progressMethod": {
+                        "description": "Progress Method. Default value: ValueBased",
+                        "type": "string",
+                        "enum": [
+                            "ValueBased",
+                            "StepBased",
+                            "Infinite"
+                        ],
+                        "$enumRef": {
+                            "enum": "progressDialog.progressMethod",
+                            "module": "$.f2fee1f4-25ef-3451-a66b-11b328ea34f4"
+                        }
+                    },
+                    "horizontalPosition": {
+                        "description": "Dialog Horizontal position (Center by default)",
+                        "type": "string",
+                        "enum": [
+                            "None",
+                            "Left",
+                            "Right",
+                            "Center"
+                        ],
+                        "$enumRef": {
+                            "enum": "popup.horizontalPosition",
+                            "module": "$.f2fee1f4-25ef-3451-a66b-11b328ea34f4"
+                        }
+                    },
+                    "verticalPosition": {
+                        "description": "Dialog Vertical position (Center by default)",
+                        "type": "string",
+                        "enum": [
+                            "None",
+                            "Top",
+                            "Bottom",
+                            "Center"
+                        ],
+                        "$enumRef": {
+                            "enum": "popup.verticalPosition",
+                            "module": "$.f2fee1f4-25ef-3451-a66b-11b328ea34f4"
+                        }
+                    },
+                    "width": {
+                        "description": "Width (default: 300)",
+                        "type": "number"
+                    },
+                    "height": {
+                        "description": "Height (default: 200)",
+                        "type": "number"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "buildHeader": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "Progress Dialog Parameters",
+                "type": "object",
+                "required": [
+                    "message"
+                ],
+                "properties": {
+                    "message": {
+                        "description": "Text displayed in the dialog",
+                        "type": "string"
+                    },
+                    "progressValue": {
+                        "description": "Value displayed in the progress indicator area (must be number for Value-based, string for Step-based)"
+                    },
+                    "progressDialogTemplate": {
+                        "description": "Progress Dialog Template. Default value: Hide",
+                        "type": "string",
+                        "enum": [
+                            "None",
+                            "Cancel",
+                            "Hide",
+                            "CancelHide"
+                        ],
+                        "$enumRef": {
+                            "enum": "progressDialog.progressDialogTemplate",
+                            "module": "$.f2fee1f4-25ef-3451-a66b-11b328ea34f4"
+                        }
+                    },
+                    "progressMethod": {
+                        "description": "Progress Method. Default value: ValueBased",
+                        "type": "string",
+                        "enum": [
+                            "ValueBased",
+                            "StepBased",
+                            "Infinite"
+                        ],
+                        "$enumRef": {
+                            "enum": "progressDialog.progressMethod",
+                            "module": "$.f2fee1f4-25ef-3451-a66b-11b328ea34f4"
+                        }
+                    },
+                    "horizontalPosition": {
+                        "description": "Dialog Horizontal position (Center by default)",
+                        "type": "string",
+                        "enum": [
+                            "None",
+                            "Left",
+                            "Right",
+                            "Center"
+                        ],
+                        "$enumRef": {
+                            "enum": "popup.horizontalPosition",
+                            "module": "$.f2fee1f4-25ef-3451-a66b-11b328ea34f4"
+                        }
+                    },
+                    "verticalPosition": {
+                        "description": "Dialog Vertical position (Center by default)",
+                        "type": "string",
+                        "enum": [
+                            "None",
+                            "Top",
+                            "Bottom",
+                            "Center"
+                        ],
+                        "$enumRef": {
+                            "enum": "popup.verticalPosition",
+                            "module": "$.f2fee1f4-25ef-3451-a66b-11b328ea34f4"
+                        }
+                    },
+                    "width": {
+                        "description": "Width (default: 300)",
+                        "type": "number"
+                    },
+                    "height": {
+                        "description": "Height (default: 200)",
+                        "type": "number"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "valid": true,
+            "identifier": "progressDialogParameters",
+            "packageUid": "2dbcfd22-58ea-49a2-99d6-005f5bb902c3",
+            "packageVersionUid": "88e8235a-d2ec-41aa-a038-5240e0b83b8e",
+            "packageIdentifier": "irpa_core",
+            "access": "default",
+            "submittable": true,
+            "duplicable": false,
+            "mode": "managed"
+        },
+        {
+            "uid": "2bed6942-daa9-3e28-a3f7-686dd0b968e6",
+            "name": "Quality for tiff or jpg",
+            "type": "datatype",
+            "createdBy": "user@mail.com",
+            "updatedBy": "user@mail.com",
+            "createdDate": "2025-10-02T14:13:32.248867Z",
+            "updatedDate": "2025-10-02T14:13:32.248868Z",
+            "visible": false,
+            "activated": true,
+            "header": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "Quality for tiff or jpg",
+                "type": "object",
+                "properties": {
+                    "tiffCompression": {
+                        "description": "compression for tiff, by default no compression",
+                        "type": "string",
+                        "enum": [
+                            "compressionLZW",
+                            "compressionCCITT3",
+                            "compressionCCITT4",
+                            "compressionRle"
+                        ],
+                        "$enumRef": {
+                            "enum": "tiffCompression",
+                            "module": "$.f2fee1f4-25ef-3451-a66b-11b328ea34f4"
+                        }
+                    },
+                    "jpgQuality": {
+                        "description": "encoding for jpg (from 1 to 100) (default value to 100)",
+                        "type": "number"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "buildHeader": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "title": "Quality for tiff or jpg",
+                "type": "object",
+                "properties": {
+                    "tiffCompression": {
+                        "description": "compression for tiff, by default no compression",
+                        "type": "string",
+                        "enum": [
+                            "compressionLZW",
+                            "compressionCCITT3",
+                            "compressionCCITT4",
+                            "compressionRle"
+                        ],
+                        "$enumRef": {
+                            "enum": "tiffCompression",
+                            "module": "$.f2fee1f4-25ef-3451-a66b-11b328ea34f4"
+                        }
+                    },
+                    "jpgQuality": {
+                        "description": "encoding for jpg (from 1 to 100) (default value to 100)",
+                        "type": "number"
+                    }
+                },
+                "strict": true,
+                "additionalProperties": false
+            },
+            "valid": true,
+            "identifier": "imageQuality",
+            "packageUid": "2dbcfd22-58ea-49a2-99d6-005f5bb902c3",
+            "packageVersionUid": "88e8235a-d2ec-41aa-a038-5240e0b83b8e",
+            "packageIdentifier": "irpa_core",
+            "access": "default",
+            "submittable": true,
+            "duplicable": false,
+            "mode": "managed"
+        }
+    ]
+}
