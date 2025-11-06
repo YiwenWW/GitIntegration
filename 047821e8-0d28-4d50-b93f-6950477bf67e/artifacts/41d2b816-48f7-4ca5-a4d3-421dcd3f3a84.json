@@ -1,0 +1,54 @@
+{
+  "uid" : "41d2b816-48f7-4ca5-a4d3-421dcd3f3a84",
+  "name" : "demo1",
+  "description" : "",
+  "type" : "automation",
+  "createdBy" : "user@mail.com",
+  "updatedBy" : "user@mail.com",
+  "createdDate" : "2025-11-06T21:04:28.262302Z",
+  "updatedDate" : "2025-11-06T21:04:28.262302Z",
+  "visible" : true,
+  "activated" : true,
+  "header" : {
+    "configuration" : [ ],
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "maxDuration" : 600,
+    "maxActivityDuration" : 30,
+    "triggerable" : true,
+    "hasAddJobSubAutomations" : false,
+    "hasAlerts" : false,
+    "interruptible" : false,
+    "scriptUids" : [ ]
+  },
+  "valid" : false,
+  "dependencies" : [ {
+    "packageUid" : "2dbcfd22-58ea-49a2-99d6-005f5bb902c3",
+    "packageVersionUid" : "88e8235a-d2ec-41aa-a038-5240e0b83b8e",
+    "packageAlias" : "irpa_core",
+    "artifactUid" : "9cab8902-34c3-37f9-a6bb-8e55279e5195",
+    "type" : "content",
+    "mode" : "association",
+    "ref" : "irpa_core.9cab8902-34c3-37f9-a6bb-8e55279e5195"
+  } ],
+  "content" : {
+    "name" : "content",
+    "uid" : "381ffe49-c712-4e37-8b7c-5bbd7bdf75ff",
+    "scanMandatory" : false
+  },
+  "contents" : {
+    "totalCount" : 1,
+    "data" : [ {
+      "name" : "content",
+      "uid" : "381ffe49-c712-4e37-8b7c-5bbd7bdf75ff",
+      "scanMandatory" : false
+    } ]
+  },
+  "identifier" : "demo1",
+  "projectUid" : "047821e8-0d28-4d50-b93f-6950477bf67e",
+  "lastHeaderUpdateRelease" : "2003",
+  "access" : "default",
+  "submittable" : true,
+  "duplicable" : true,
+  "mode" : "managed"
+}
