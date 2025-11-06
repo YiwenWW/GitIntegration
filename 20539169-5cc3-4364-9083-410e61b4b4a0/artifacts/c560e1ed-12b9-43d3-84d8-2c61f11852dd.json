@@ -1,0 +1,28 @@
+{
+  "uid" : "c560e1ed-12b9-43d3-84d8-2c61f11852dd",
+  "name" : "dem1",
+  "description" : "",
+  "type" : "datatype",
+  "createdBy" : "user@mail.com",
+  "updatedBy" : "user@mail.com",
+  "createdDate" : "2025-11-06T22:16:26.728702Z",
+  "updatedDate" : "2025-11-06T22:16:26.728702Z",
+  "visible" : true,
+  "activated" : true,
+  "header" : {
+    "$schema" : "http://json-schema.org/draft-07/schema#",
+    "type" : "object",
+    "title" : "dem1",
+    "properties" : { },
+    "version" : 1
+  },
+  "valid" : false,
+  "dependencies" : [ ],
+  "identifier" : "dem1",
+  "projectUid" : "20539169-5cc3-4364-9083-410e61b4b4a0",
+  "lastHeaderUpdateRelease" : "2003",
+  "access" : "default",
+  "submittable" : true,
+  "duplicable" : true,
+  "mode" : "managed"
+}
