@@ -1,0 +1,28 @@
+{
+  "uid" : "bca72d5a-4240-48bf-a90b-3d14114f1748",
+  "name" : "demo1",
+  "description" : "",
+  "type" : "datatype",
+  "createdBy" : "user@mail.com",
+  "updatedBy" : "user@mail.com",
+  "createdDate" : "2025-11-07T09:02:35.210581Z",
+  "updatedDate" : "2025-11-07T09:02:35.210581Z",
+  "visible" : true,
+  "activated" : true,
+  "header" : {
+    "$schema" : "http://json-schema.org/draft-07/schema#",
+    "type" : "object",
+    "title" : "demo1",
+    "properties" : { },
+    "version" : 1
+  },
+  "valid" : false,
+  "dependencies" : [ ],
+  "identifier" : "demo1",
+  "projectUid" : "24b7e03f-7940-4e84-b713-143f806029b0",
+  "lastHeaderUpdateRelease" : "2003",
+  "access" : "default",
+  "submittable" : true,
+  "duplicable" : true,
+  "mode" : "managed"
+}
