@@ -1,0 +1,28 @@
+{
+  "uid" : "99d1cd3c-09cd-4207-8112-52aa1673b716",
+  "name" : "d4",
+  "description" : "",
+  "type" : "datatype",
+  "createdBy" : "user@mail.com",
+  "updatedBy" : "user@mail.com",
+  "createdDate" : "2025-11-10T22:25:12.380326Z",
+  "updatedDate" : "2025-11-10T22:25:12.380326Z",
+  "visible" : true,
+  "activated" : true,
+  "header" : {
+    "$schema" : "http://json-schema.org/draft-07/schema#",
+    "type" : "object",
+    "title" : "d4",
+    "properties" : { },
+    "version" : 1
+  },
+  "valid" : false,
+  "dependencies" : [ ],
+  "identifier" : "d4",
+  "projectUid" : "f5c83f4d-2e1d-4307-a0bd-62e88ac349ad",
+  "lastHeaderUpdateRelease" : "2003",
+  "access" : "default",
+  "submittable" : true,
+  "duplicable" : true,
+  "mode" : "managed"
+}
