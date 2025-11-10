@@ -1,0 +1,28 @@
+{
+  "uid" : "7ff5397a-1a39-4453-9a1a-90fb98ae3124",
+  "name" : "d2",
+  "description" : "",
+  "type" : "datatype",
+  "createdBy" : "user@mail.com",
+  "updatedBy" : "user@mail.com",
+  "createdDate" : "2025-11-10T20:54:25.205505Z",
+  "updatedDate" : "2025-11-10T20:54:25.205505Z",
+  "visible" : true,
+  "activated" : true,
+  "header" : {
+    "$schema" : "http://json-schema.org/draft-07/schema#",
+    "type" : "object",
+    "title" : "d2",
+    "properties" : { },
+    "version" : 1
+  },
+  "valid" : false,
+  "dependencies" : [ ],
+  "identifier" : "d2",
+  "projectUid" : "f5c83f4d-2e1d-4307-a0bd-62e88ac349ad",
+  "lastHeaderUpdateRelease" : "2003",
+  "access" : "default",
+  "submittable" : true,
+  "duplicable" : true,
+  "mode" : "managed"
+}
