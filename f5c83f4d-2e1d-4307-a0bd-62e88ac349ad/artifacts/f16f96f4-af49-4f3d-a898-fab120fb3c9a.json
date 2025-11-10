@@ -5,10 +5,8 @@
   "type" : "datatype",
   "createdBy" : "user@mail.com",
   "updatedBy" : "user@mail.com",
-  "lockedBy" : "user@mail.com",
   "createdDate" : "2025-11-10T19:24:46.182772Z",
-  "updatedDate" : "2025-11-10T19:29:50.754766Z",
-  "lockExpirationDate" : "2025-11-10T19:55:24.450233Z",
+  "updatedDate" : "2025-11-10T19:34:02.995936Z",
   "visible" : true,
   "activated" : true,
   "header" : {
@@ -23,6 +21,10 @@
       "w" : {
         "type" : "string",
         "uid" : "9ebabe0c-209b-451e-b424-2a6e6b0e1e12"
+      },
+      "e" : {
+        "type" : "string",
+        "uid" : "86c402ca-6c52-45ba-b009-e6464f797e17"
       }
     },
     "version" : 1
