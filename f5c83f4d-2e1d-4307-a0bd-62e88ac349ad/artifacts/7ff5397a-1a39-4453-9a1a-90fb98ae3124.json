@@ -1,20 +1,18 @@
 {
   "uid" : "7ff5397a-1a39-4453-9a1a-90fb98ae3124",
-  "name" : "d23456",
+  "name" : "d234567",
   "description" : "",
   "type" : "datatype",
   "createdBy" : "user@mail.com",
   "updatedBy" : "user@mail.com",
-  "lockedBy" : "user@mail.com",
   "createdDate" : "2025-11-10T20:54:25.205505Z",
-  "updatedDate" : "2025-11-10T21:04:00.300408Z",
-  "lockExpirationDate" : "2025-11-10T21:32:53.675567Z",
+  "updatedDate" : "2025-11-10T21:09:11.985290Z",
   "visible" : true,
   "activated" : true,
   "header" : {
     "$schema" : "http://json-schema.org/draft-07/schema#",
     "type" : "object",
-    "title" : "d23456",
+    "title" : "d234567",
     "properties" : { },
     "version" : 1
   },
