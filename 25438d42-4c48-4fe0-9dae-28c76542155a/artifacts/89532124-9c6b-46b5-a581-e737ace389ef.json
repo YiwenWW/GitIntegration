@@ -1,22 +1,33 @@
 {
   "uid" : "89532124-9c6b-46b5-a581-e737ace389ef",
-  "name" : "dt10086",
+  "name" : "dt122",
   "description" : "",
   "type" : "datatype",
   "createdBy" : "user@mail.com",
   "updatedBy" : "user@mail.com",
+  "lockedBy" : "user@mail.com",
   "createdDate" : "2025-11-10T15:45:08.629865Z",
-  "updatedDate" : "2025-11-10T15:45:08.629865Z",
+  "updatedDate" : "2025-11-10T17:40:54.435174Z",
+  "lockExpirationDate" : "2025-11-10T18:10:34.898275Z",
   "visible" : true,
   "activated" : true,
   "header" : {
     "$schema" : "http://json-schema.org/draft-07/schema#",
     "type" : "object",
-    "title" : "dt1",
-    "properties" : { },
+    "title" : "dt122",
+    "properties" : {
+      "string" : {
+        "type" : "string",
+        "uid" : "71d64600-753b-4d4d-97a7-a005252821cd"
+      },
+      "dsda" : {
+        "type" : "string",
+        "uid" : "ee9442af-9ec6-42b4-a63d-648f3a2a0e13"
+      }
+    },
     "version" : 1
   },
-  "valid" : false,
+  "valid" : true,
   "dependencies" : [ ],
   "identifier" : "dt1",
   "projectUid" : "25438d42-4c48-4fe0-9dae-28c76542155a",
