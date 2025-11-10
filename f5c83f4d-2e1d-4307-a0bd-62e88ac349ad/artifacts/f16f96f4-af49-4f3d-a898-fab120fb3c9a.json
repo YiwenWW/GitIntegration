@@ -7,8 +7,8 @@
   "updatedBy" : "user@mail.com",
   "lockedBy" : "user@mail.com",
   "createdDate" : "2025-11-10T19:24:46.182772Z",
-  "updatedDate" : "2025-11-10T19:25:11.613169Z",
-  "lockExpirationDate" : "2025-11-10T19:54:55.581753Z",
+  "updatedDate" : "2025-11-10T19:29:50.754766Z",
+  "lockExpirationDate" : "2025-11-10T19:55:24.450233Z",
   "visible" : true,
   "activated" : true,
   "header" : {
@@ -19,6 +19,10 @@
       "q" : {
         "type" : "string",
         "uid" : "53b930b8-dde9-4c57-aeb5-fc7119c85ef8"
+      },
+      "w" : {
+        "type" : "string",
+        "uid" : "9ebabe0c-209b-451e-b424-2a6e6b0e1e12"
       }
     },
     "version" : 1
