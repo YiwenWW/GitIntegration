@@ -1,0 +1,28 @@
+{
+  "uid" : "e934995b-898d-4adc-8508-d44df877184c",
+  "name" : "d6",
+  "description" : "",
+  "type" : "datatype",
+  "createdBy" : "user@mail.com",
+  "updatedBy" : "user@mail.com",
+  "createdDate" : "2025-11-12T10:37:18.445546Z",
+  "updatedDate" : "2025-11-12T10:37:18.445546Z",
+  "visible" : true,
+  "activated" : true,
+  "header" : {
+    "$schema" : "http://json-schema.org/draft-07/schema#",
+    "type" : "object",
+    "title" : "d6",
+    "properties" : { },
+    "version" : 1
+  },
+  "valid" : false,
+  "dependencies" : [ ],
+  "identifier" : "d6",
+  "projectUid" : "f5c83f4d-2e1d-4307-a0bd-62e88ac349ad",
+  "lastHeaderUpdateRelease" : "2003",
+  "access" : "default",
+  "submittable" : true,
+  "duplicable" : true,
+  "mode" : "managed"
+}
