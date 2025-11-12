@@ -5,18 +5,25 @@
   "type" : "datatype",
   "createdBy" : "user@mail.com",
   "updatedBy" : "user@mail.com",
+  "lockedBy" : "user@mail.com",
   "createdDate" : "2025-11-10T20:54:25.205505Z",
-  "updatedDate" : "2025-11-10T21:09:11.985290Z",
+  "updatedDate" : "2025-11-12T08:42:08.716883Z",
+  "lockExpirationDate" : "2025-11-12T09:06:43.875238Z",
   "visible" : true,
   "activated" : true,
   "header" : {
     "$schema" : "http://json-schema.org/draft-07/schema#",
     "type" : "object",
     "title" : "d234567",
-    "properties" : { },
+    "properties" : {
+      "q" : {
+        "type" : "string",
+        "uid" : "c9926673-1bcc-4980-bacc-a6a8a11a5d5a"
+      }
+    },
     "version" : 1
   },
-  "valid" : false,
+  "valid" : true,
   "dependencies" : [ ],
   "identifier" : "d2",
   "projectUid" : "f5c83f4d-2e1d-4307-a0bd-62e88ac349ad",
